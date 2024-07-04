@@ -1,0 +1,18 @@
+/* geral */
+body{
+    font-family: "opens sans" sans-serif;
+    background: black;
+    color: white;
+}
+a{
+    color:beige;
+    text-decoration: none;
+
+}
+a:hover{
+    color: bisque;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "playfair, serif";
+}
