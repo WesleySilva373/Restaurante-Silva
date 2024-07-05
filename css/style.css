@@ -16,3 +16,134 @@ a:hover{
 h1, h2, h3, h4, h5, h6{
     font-family: "playfair, serif";
 }
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: black;
+}
+#preloader::before{
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid black;
+    border-top-color: #cda45e ;
+    border-bottom-color:#cda45e ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+}
+@keyframes animate-preloader{
+    0% {
+        transform: rotate(0deg);
+    
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.back-to-top{
+    position: fixed;
+    visibility: hidden;
+    opacity: 15px;
+    bottom: 15px;
+    z-index: 996;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: all 0.4s;
+    border: 2px solid #cda45e;
+}
+.back-to-top i {
+    font-size: 28px;
+    background: #cda45e;
+    color: black;
+
+}
+.back-to-top:hover{
+    background: #cda45e;
+    color: black;
+}
+.back-to-top:hover i{
+    color: #444;
+}
+ .back-to-top .active{
+    visibility: visible;
+    opacity: 1 ;
+ }
+#topbar.tobar-srolled{
+    top: -40px;
+
+}
+#topbar .contact-info i{
+    font-style: normal;
+    color: white;
+}
+#topbar .contact-info i span{
+    padding-left: 5px;
+    color: white;
+
+}
+/* header */
+#header{
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0 ;
+    top: 40px;
+
+}
+#header.header-scrolled{
+    top: 0;
+    background: rgb(0, 0, 0, 0.85);
+    border-bottom: 1px solid #373323;
+}
+
+#header .logo{
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "" serif;
+}
+#header .logo a{
+    color: white;
+
+}
+#header .logo img{
+    max-height: 40px;
+}
+/*  botao reservas + book a table  */
+.booka-a-table-btn{
+    margin: 0 0 0 15px;
+    border: 2px solid #cda45e;
+    color: #ececee;
+    border-radius: 50%;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transform: 0.3s;
+}
+.booka-a-table-btn:hover{
+    background: #cda45e;
+    color: black;
+}
+@media (max-width: 992px){
+    .booka-a-table-btn{
+        margin: 0 15px 0 0 ;
+        padding: 8px 20px;
+    }
+}
