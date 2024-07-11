@@ -487,9 +487,8 @@ h6 {
     }
 }
 
-/* css geral */
-
-.section {
+/* CSS Geral - Sections */
+section {
     padding: 60px 0;
     overflow: hidden;
 }
@@ -502,7 +501,7 @@ h6 {
     padding-bottom: 40px;
 }
 
-.section h2 {
+.section-title h2 {
     font-size: 14px;
     font-weight: 500;
     padding: 0;
@@ -510,8 +509,8 @@ h6 {
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: white;
-    font-size: "poppins", "sans-serif";
+    color: #aaa;
+    font-family: "Poppins", sans-serif;
 }
 
 .section-title h2::after {
@@ -519,20 +518,21 @@ h6 {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: rgba(225, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2);
     margin: 4px 10px;
 }
 
 .section-title p {
     margin: 0;
     padding: 0;
-    font-size: 33px;
+    font-size: 36px;
     font-weight: 700;
-    font-family: "playfair", serif;
+    font-family: "Playfair Display", serif;
     color: #cda45e;
 }
 
-/* sobre about */
+/*------ Sobre = About ------*/
+
 .about {
     background: url("../img/about-bg.jpg") center center;
     background-size: cover;
@@ -546,8 +546,8 @@ h6 {
     position: absolute;
     bottom: 0;
     top: 0;
-
-
+    left: 0;
+    right: 0;
 }
 
 .about .about-img {
@@ -557,23 +557,18 @@ h6 {
 
 .about .about-img img {
     max-width: 100%;
-    border: 4px solid #cda45e;
+    border: 4px solid rgba(255, 255, 255, 0.2);
     position: relative;
-    display: inline-block;
-    /* Garante que o elemento .about-img tenha uma exibição inline-block para que os pseudo-elementos se comportem corretamente */
 }
 
 .about .about-img::before {
     content: "";
     position: absolute;
-    /* Muda para posição absoluta para posicionamento preciso em relação ao .about-img */
     width: 60px;
     height: 60px;
     z-index: 1;
     left: 20px;
-    /* Move 20px para a esquerda em relação ao .about-img */
     top: 20px;
-    /* Move 20px para cima em relação ao .about-img */
     border-left: 5px solid #cda45e;
     border-top: 5px solid #cda45e;
     transition: 0.5s;
@@ -582,26 +577,21 @@ h6 {
 .about .about-img::after {
     content: "";
     position: absolute;
-    /* Muda para posição absoluta para posicionamento preciso em relação ao .about-img */
     width: 60px;
     height: 60px;
     z-index: 2;
     right: 20px;
-    /* Move 20px para a direita em relação ao .about-img */
     bottom: 20px;
-    /* Move 20px para baixo em relação ao .about-img */
     border-right: 5px solid #cda45e;
     border-bottom: 5px solid #cda45e;
     transition: 0.5s;
 }
 
-
-
 .about .about-img:hover {
     transform: scale(1.03);
 }
 
-.about .about-img:hover::after {
+.about .about-img:hover::before {
     left: 10px;
     top: 10px;
 }
@@ -623,13 +613,10 @@ h6 {
 .about .content ul {
     list-style: none;
     padding: 0;
-
 }
 
 .about .content ul li {
-    font-size: 20px;
-    padding-right: 4px;
-    color: #cda45e;
+    padding-bottom: 10px;
 }
 
 .about .content ul i {
@@ -642,9 +629,55 @@ h6 {
     margin-bottom: 0;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
     .about {
         background-attachment: fixed;
     }
+}
+.why-us{
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.3s;
+    background: #0c0b09;
+}
+.why-us .box span{
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #cda45e;
+}
+.why-us .box h4{
+    font-weight: 600;
+    font-size: 24px;
+    padding: 0;
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+.why-us .box p{
+    color: #aaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
 
 }
+
+.why .box:hover{
+ background: #cda45e;
+ padding: 30px 30px 70px 30px;
+ box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+.why-us .box:hover span,
+.why-us .box:hover h4,
+.why-us .box:hover p{
+    color: #ececec;
+}
+
+
+
+
+
+
+
+
+
+
