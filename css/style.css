@@ -803,18 +803,102 @@ menu .menu-content span {
     border-color: #cda45e;
 }
 
-.especials .details h3{
+.especials .details h3 {
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #cda45e;
 }
-.especials .details p{
-color: #aaa;
+
+.especials .details p {
+    color: #aaa;
 }
-@media ( max-width: 992px){
-    .especials .nav-link{
+
+@media (max-width: 992px) {
+    .especials .nav-link {
         border: 0;
         padding: 15px;
     }
+}
+
+.events {
+    background: url(../img/events-bg.jpg) center center, no-repeat;
+    background-size: cover;
+    /* fica tras do site */
+    position: relative;
+    /*  para que o texto sobre ponha a img */
+}
+
+.events::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.8);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.events .container {
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .events {
+        background-attachment: fixed;
+    }
+
+
+    .events .events-carousel {
+        background: rgba(255, 255, 255, 0.08);
+        padding: 30px;
+
+    }
+
+    .events .event-item {
+        color: white;
+    }
+
+    .events .event-item h3 {
+        color: #cda45e;
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .events .event-item .price {
+        font-size: 26px;
+        font-family: "open sans", sans-serif;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .events .event-item .price span {
+        border-bottom: 2px solid #cda45e;
+    }
+
+    .events .event-item ul {
+        list-style: none;
+        padding: 0;
+
+    }
+
+    .events .event-item ul li {
+        padding-bottom: 10px;
+     color: white;
+    }
+
+    .events .event-item ul i{
+        font-size: 20px;
+        color: #cda45e;
+        padding-right: 4px;
+    }
+
+    .events .event-item p:last-child{
+color: white;
+margin-bottom: 0
+
+
+;
+    }
+
 }
