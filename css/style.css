@@ -634,26 +634,30 @@ section {
         background-attachment: fixed;
     }
 }
-.why-us{
+
+.why-us {
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     padding: 50px 30px;
     transition: all ease-in-out 0.3s;
     background: #0c0b09;
 }
-.why-us .box span{
+
+.why-us .box span {
     display: block;
     font-size: 28px;
     font-weight: 700;
     color: #cda45e;
 }
-.why-us .box h4{
+
+.why-us .box h4 {
     font-weight: 600;
     font-size: 24px;
     padding: 0;
     margin: 20px 0;
     color: rgba(255, 255, 255, 0.8);
 }
-.why-us .box p{
+
+.why-us .box p {
     color: #aaa;
     font-size: 15px;
     margin: 0;
@@ -661,14 +665,15 @@ section {
 
 }
 
-.why .box:hover{
- background: #cda45e;
- padding: 30px 30px 70px 30px;
- box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+.why .box:hover {
+    background: #cda45e;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
+
 .why-us .box:hover span,
 .why-us .box:hover h4,
-.why-us .box:hover p{
+.why-us .box:hover p {
     color: #ececec;
 }
 
@@ -700,40 +705,44 @@ section {
     /* border: 1px solid #cda45e; */
 }
 
-.menu #menu-filters li:hover, 
+.menu #menu-filters li:hover,
 .menu #menu-filters li.filter-active {
     color: #cda45e;
 }
 
-.menu .menu-item{
+.menu .menu-item {
     margin-top: 50px;
 }
-.menu .menu-img{
+
+.menu .menu-img {
     width: 70px;
     border-radius: 50%;
     float: left;
     border: 3px solid rgba(247, 148, 68, 0.5);
 
-} 
-.menu .menu-content{
+}
+
+.menu .menu-content {
     margin-left: 85px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
     position: relative;
 }
-.menu .menu-content::after{
- content: ".................................................................................................";
- position: absolute;
- left: 120px;
- right: 0;
- top: -4px;
- z-index: 1;
- color: #aaa;
- font-family: Arial, Helvetica, sans-serif;
+
+.menu .menu-content::after {
+    content: ".................................................................................................";
+    position: absolute;
+    left: 120px;
+    right: 0;
+    top: -4px;
+    z-index: 1;
+    color: #aaa;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
-.menu  .menu-content a{
+
+.menu .menu-content a {
     padding-right: 10px;
     background: #1a1814;
     position: relative;
@@ -742,10 +751,12 @@ section {
     color: white;
     transform: 0.3s;
 }
-.menu .menu-contenta:hover{
+
+.menu .menu-contenta:hover {
     color: #cda45e;
 }
-menu .menu-content span{
+
+menu .menu-content span {
     position: relative;
     z-index: 3;
     padding: 0 10px;
@@ -753,7 +764,7 @@ menu .menu-content span{
     color: #cda45e;
 }
 
-.menu .menu-ingredients{
+.menu .menu-ingredients {
     margin-left: 85px;
     font-style: italic;
     font-size: 14px;
@@ -763,15 +774,17 @@ menu .menu-content span{
 
 
 /*  pratos */
-.especials{
+.especials {
     overflow: hidden;
 }
-.especials .nav-tabs{
+
+.especials .nav-tabs {
     border: 0;
 }
-.especials .nav-link{
+
+.especials .nav-link {
     border: 0;
-    padding: 12px 15px ;
+    padding: 12px 15px;
     transition: 0.3s;
     color: white;
     border-radius: 0;
@@ -779,12 +792,29 @@ menu .menu-content span{
     font-weight: 600;
     font-size: 15px;
 }
-.especials .nav-link:hover{
+
+.especials .nav-link:hover {
     color: #cda45e;
 }
 
-.especials .nav-link.active{
+.especials .nav-link.active {
     color: #0c0b09;
     background: #cda45e;
-    border-color:#cda45e ;
+    border-color: #cda45e;
+}
+
+.especials .details h3{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #cda45e;
+}
+.especials .details p{
+color: #aaa;
+}
+@media ( max-width: 992px){
+    .especials .nav-link{
+        border: 0;
+        padding: 15px;
+    }
 }
