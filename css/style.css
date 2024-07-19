@@ -843,10 +843,12 @@ menu .menu-content span {
     position: relative;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 320px) {
     .events {
         background-attachment: fixed;
     }
+}
+    
 
 
     .events .events-carousel {
@@ -912,4 +914,4 @@ menu .menu-content span {
     .events .swiper-pagination .swiper-pagination-bullet-active{
         background: #cda45e;
     }
-}
+/* reservas */
