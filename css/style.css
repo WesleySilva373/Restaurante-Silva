@@ -884,21 +884,32 @@ menu .menu-content span {
 
     .events .event-item ul li {
         padding-bottom: 10px;
-     color: white;
+        color: white;
     }
 
-    .events .event-item ul i{
+    .events .event-item ul i {
         font-size: 20px;
         color: #cda45e;
         padding-right: 4px;
     }
 
-    .events .event-item p:last-child{
-color: white;
-margin-bottom: 0
-
-
-;
+    .events .event-item p:last-child {
+        color: white;
+        margin-bottom: 0;
     }
 
+    .events .swiper-pagination {
+        margin-top: 3px;
+        position: relative;
+    }
+
+    .events .swiper-pagination .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: rgb(255, 255, 255, .04,);
+    }
+
+    .events .swiper-pagination .swiper-pagination-bullet-active{
+        background: #cda45e;
+    }
 }
