@@ -1001,3 +1001,43 @@ menu .menu-content span {
 .book-a-table .php-email-form button [type=submit]:hover{
     background: #cda45e;
 }
+
+
+/* avaliaçoes */
+
+.testimonials .testimonials-carousel, .testimonials .testimonials-slider{
+    overflow: hidden;
+}
+.testimonials .testimonials-item{
+    box-sizing: content-box;
+    min-height: 320px;
+
+}
+.testimonials .testimonials-item .testimonials-img{
+    width: 90px;
+    border-radius: 50px;
+    margin: -40px 0 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 6px solid #cda45e;
+}
+
+.testimonials .testimonials-item h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 px 45px;
+    color: white;
+}
+
+.testimonials .testimonials-item h4{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 0 0 45px;
+}
+
+
+.testimonials .testimonials-item .quote-icon-left, .testimonials .testimonials-item .quote-icon-right{
+    color: #cda45e;
+    font-size:26px ;
+}
+
